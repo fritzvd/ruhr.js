@@ -1,0 +1,17 @@
+{
+  "name": "ruhrjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nesly index.js index.s",
+    "build": "./nesasm index.s index.nes",
+    "tileset": "python pilbmp2nes.py -i tiles.png -o tiles.chr"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nesly": "^0.3.1",
+    "nesly-assembler": "https://github.com/fritzvd/nesly-assembler"
+  }
+}
