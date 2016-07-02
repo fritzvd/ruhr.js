@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nesly index.js index.s",
-    "build": "./nesasm index.s index.nes",
-    "tileset": "python pilbmp2nes.py -i tiles.png -o tiles.chr"
+    "compile": "./nesasm index.s",
+    "tileset": "python pilbmp2nes.py -i tiles.png -o tiles.chr",
+    "build": "npm start && npm run compile && nes index.nes"
   },
   "author": "",
   "license": "ISC",

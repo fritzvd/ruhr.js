@@ -151,20 +151,20 @@ ReadUp:
 	and #%00000001
 	beq ReadUpDone
 	lda $0200
-	clc
-	adc #$01
+	sec
+	sbc #$01
 	sta $0200
 	lda $0204
-	clc
-	adc #$01
+	sec
+	sbc #$01
 	sta $0204
 	lda $0208
-	clc
-	adc #$01
+	sec
+	sbc #$01
 	sta $0208
 	lda $020C
-	clc
-	adc #$01
+	sec
+	sbc #$01
 	sta $020C
 ReadUpDone:
 ReadDown:
@@ -172,20 +172,20 @@ ReadDown:
 	and #%00000001
 	beq ReadDownDone
 	lda $0200
-	sec
-	sbc #$01
+	clc
+	adc #$01
 	sta $0200
 	lda $0204
-	sec
-	sbc #$01
+	clc
+	adc #$01
 	sta $0204
 	lda $0208
-	sec
-	sbc #$01
+	clc
+	adc #$01
 	sta $0208
 	lda $020C
-	sec
-	sbc #$01
+	clc
+	adc #$01
 	sta $020C
 ReadDownDone:
 ReadLeft:
